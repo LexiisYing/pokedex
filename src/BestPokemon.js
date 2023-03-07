@@ -12,3 +12,4 @@ const BestPokemon = (props) => {
 };
 
 export default BestPokemon;
+

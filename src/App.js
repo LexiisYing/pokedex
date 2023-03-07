@@ -5,14 +5,15 @@ import CaughtPokemon from "./Caught";
 
 
 function App() {
-  const abilities = ['Anticipation', 'Adaptability', 'Run-Away'];
+  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
   const date =  new Date().toLocaleDateString();
-
+  function logWhenClicked() {
+    console.log("I was clicked!");
+  }
   return (
     <div>
-    <Logo appName="Pokedex"/>
-    <BestPokemon newAbilities = {abilities}
- />
+    <Logo appName="Lexi's Pokedex" handleClick={logWhenClicked}/>
+    <BestPokemon newAbilities = {abilities}/>
     <CaughtPokemon newDate = {date}/>
     </div>);
 }
