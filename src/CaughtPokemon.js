@@ -13,7 +13,7 @@ const CaughtPokemon = (props) => {
   }
   return <>
     <ul>{caught.map((item, index) => {
-          return <li key={index}>"Caught {item} on {props.newDate} " </li>;
+          return <li key={index}>Caught {item} on {props.newDate} </li>;
           })}
 
     </ul>
