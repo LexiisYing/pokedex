@@ -29,7 +29,7 @@ const CaughtPokemon = (props) => {
       value={pokemonNameInput}
       onChange={handleInputChange}
       />
-       <button onClick={catchPokemon}>click</button>
+       <button onClick={catchPokemon}>click me</button>
 
   </>
 
