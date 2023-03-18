@@ -11,7 +11,8 @@ const CaughtPokemon = (props) => {
   //   return pokemonNames[randomIndex];
   // }
   function catchPokemon() {
-    setCaught(caught.concat(pokemonNameInput));
+    pokemonNameInput && setCaught(caught.concat(pokemonNameInput));
+    setPokemonNameInput("");
   }
 
   function handleInputChange(event) {
@@ -19,16 +20,16 @@ const CaughtPokemon = (props) => {
 
   }
   return <>
-    <ul>{caught.map((item, index) => {
-          return <li key={index}>Caught {item} on {props.newDate} </li>;
-          })}
+      <ul>{caught.map((item, index) => {
+            return <li key={index}>Caught {item} on {props.newDate} </li>;
+            })}
 
-    </ul>
-    <input type={"text"}
-    value={pokemonNameInput}
-    onChange={handleInputChange}
-    />
-    <button onClick={catchPokemon}>click</button>
+      </ul>
+      <input type={"text"}
+      value={pokemonNameInput}
+      onChange={handleInputChange}
+      />
+       <button onClick={catchPokemon}>click</button>
 
   </>
 
