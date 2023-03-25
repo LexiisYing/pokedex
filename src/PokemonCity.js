@@ -13,7 +13,7 @@ function PokemonCity() {
         placeholder="city"
         value={city}
         onChange={updateCity} />
-      <p>Welcome to the city of {city}</p>
+      <p>Welcome to my city of {city}</p>
     </div>
   );
 }
